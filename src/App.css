@@ -1,38 +1,134 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  background-color: #f0f0f0;
+  height: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+.App-logo {
+  height: 40px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.store {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.login-section {
+  margin-right: 20px;
+}
+
+.content-area {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 20%;
+  background-color: #e0e0e0;
+  padding: 10px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 8px;
+  margin: 5px 0;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.sidebar-right {
+  width: 20%;
+  background-color: #f4f4f8;
+  padding: 10px;
+}
+
+.App-footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #f0f0f0;
+}
+.news-container {
+  padding: 20px;
+}
+
+.news-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+
+.news-item h2 {
+  color: #333;
+}
+
+.news-item p {
+  color: #666;
+}
+.news-item {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.news-item h3 {
+  color: #333;
+}
+
+.news-item p {
+  color: #666;
+}
+
+.news-date {
+  font-style: italic;
+  font-size: 0.85em;
+}
+.sidebar nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  padding: 10px;
+  margin: 5px;
+  background-color: #f0f0f0;
+}
+
+.sidebar nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+thead {
+  background-color: #f4f4f4;
 }
